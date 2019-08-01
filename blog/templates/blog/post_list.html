@@ -9,6 +9,21 @@
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
+        <div>
+        <h1>
+        <a href = "/" > Django chicas Blog </a>
+        </h1>
+        </div>
+        {% for post in posts %}
+        <div>
+          <p> publicado: {{ post.published_date }} </p>
+          <h1><a href = "" >{{ post.title }} </a></ h1>
+            <p>{{ post.text|linebreaksbr }} </p>
+            </div>
+        {% endfor %}
+<!--
+        {% for post in posts %}{{ post }}{% endfor %}
+
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
@@ -21,5 +36,6 @@
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
+        -->
     </body>
 </html>
